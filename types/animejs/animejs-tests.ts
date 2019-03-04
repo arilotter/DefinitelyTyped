@@ -43,7 +43,10 @@ const tl = anime.timeline({
 tl.add({
 	targets: ".tiny-divvy-div",
 	scale: 10000000
-});
+}).add({
+	targets:".tiny-divvy-div",
+	scale: 2 
+}, '+=0.5')
 
 const path = anime.path('#motionPath path');
 

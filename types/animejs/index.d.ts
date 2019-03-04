@@ -105,12 +105,8 @@ declare namespace anime {
 		animations: ReadonlyArray<object>;
 	}
 
-	interface AnimeTimelineAnimParams extends AnimeAnimParams {
-		offset: number | string | FunctionBasedParamter;
-	}
-
 	interface AnimeTimelineInstance extends AnimeInstance {
-		add(params: AnimeAnimParams): AnimeTimelineInstance;
+		add(params: AnimeAnimParams, offset?: string | number): AnimeTimelineInstance;
 	}
 
 	// Helpers
